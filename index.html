@@ -3,84 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shot Clock Tournaments</title>
-    <!-- Load Tailwind CSS -->
+    <title>Shot Clock Tournaments | Professional Pool & Billiards</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Lucide Icons for vector graphics (includes apple and android icons) -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        /* Custom Font Setup */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            color: white; /* Ensure all text inside the gradient background is white */
+        }
+        /* Smooth transition for the gradient background */
+        .bg-app-gradient {
+            background: linear-gradient(to bottom, #f97316, #fbbf24);
         }
     </style>
 </head>
-<body class="bg-gray-900 min-h-screen">
+<body class="bg-app-gradient min-h-screen text-slate-900">
 
-    <!-- Header / App Name -->
     <header class="p-4 md:px-8">
-        <div class="max-w-7xl mx-auto">
-            <h1 class="text-3xl font-extrabold tracking-tight text-white">Shot Clock <span class="text-blue-300">Tournaments</span></h1>
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <h1 class="text-3xl font-extrabold tracking-tight text-white drop-shadow-md">
+                Shot Clock <span class="text-yellow-200">Tournaments</span>
+            </h1>
         </div>
     </header>
 
-    <!-- Hero Section: Logo, Description, and Download Links -->
     <main class="min-h-[calc(100vh-6rem)] flex items-center justify-center">
         <div class="w-full max-w-5xl mx-auto p-4 md:p-8">
             <section class="text-center rounded-3xl shadow-2xl p-8 md:p-16 
-                            bg-gradient-to-br from-indigo-900 to-blue-700 
+                            bg-white/10 backdrop-blur-md border border-white/20
                             transform transition-all duration-300">
                 
-                <!-- LOGO IMAGE PLACEMENT -->
-                <!-- 
-                    ACTION REQUIRED: Replace the 'LOGO_IMAGE_URL_HERE' placeholder 
-                    with the direct public URL of your logo image.
-                -->
                 <img 
-                    src="1024x1024 Cuescore.png" 
+                    src="logo-3.png" 
                     alt="Shot Clock Tournaments Logo" 
-                    class="w-24 h-24 mx-auto mb-8 rounded-xl shadow-lg"
-                    onerror="this.onerror=null; this.src='https://placehold.co/96x96/0A0A0A/FFFFFF?text=SC';"
+                    class="w-32 h-32 mx-auto mb-8 rounded-2xl shadow-2xl border-4 border-white"
+                    onerror="this.onerror=null; this.src='https://placehold.co/128x128/f97316/FFFFFF?text=9';"
                 >
-                <!-- END LOGO IMAGE PLACEMENT -->
 
-                <h2 class="text-5xl md:text-6xl font-extrabold tracking-tighter mb-4 leading-tight">
+                <h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4 text-white drop-shadow-lg">
                     Shot Clock Tournaments
                 </h2>
-                <p class="text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto mb-10">
-                    Make your tournaments run smooth and professionally. Use a shot clock and score board that is synced with your Cuescore or Challonge Tournament! 
+                
+                <p class="text-xl md:text-2xl text-orange-950 font-medium max-w-3xl mx-auto mb-10">
+                    Run your tournaments with professional precision. A synchronized shot clock and scoreboard for your Cuescore or Challonge events.
                 </p>
                 
-                <!-- Download Links for iOS and Android -->
-                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
                     
-                    <!-- iOS Button (White background) -->
-                    <a href="https://apps.apple.com/nz/app/shot-clock-tournaments/id6744266013" target="_blank" class="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-indigo-900 bg-white 
-                              rounded-full shadow-xl hover:bg-gray-200 
-                              transition-all duration-300 ease-in-out transform hover:scale-105 group">
-                        Download for iOS
+                    <a href="PLACEHOLDER_IOS_LINK" target="_blank" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-orange-600 bg-white 
+                              rounded-2xl shadow-xl hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+                        <i data-lucide="apple" class="mr-2"></i> Download for iOS
                     </a>
                     
-                    <!-- Android Button (Blue background) -->
-                    <a href="https://play.google.com/store/apps/details?id=com.indigoApps.shotclocktournaments" target="_blank" class="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white bg-blue-500 
-                              rounded-full shadow-xl hover:bg-blue-600 
-                              transition-all duration-300 ease-in-out transform hover:scale-105 group">
-                        Get on Android
+                    <a href="PLACEHOLDER_ANDROID_LINK" target="_blank" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white bg-slate-900 
+                              rounded-2xl shadow-xl hover:bg-black transition-all duration-300 transform hover:-translate-y-1">
+                        <i data-lucide="play" class="mr-2"></i> Get on Android
                     </a>
                 </div>
-                <p class="mt-6 text-sm text-blue-300">Available now on the App Store and Google Play.</p>
+
+                <p class="mt-8 text-sm font-semibold text-orange-900/70 uppercase tracking-widest">
+                    Available now on App Store & Google Play
+                </p>
             </section>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="text-center p-6 text-gray-400 border-t border-gray-800">
-        <p>&copy; 2025 Shot Clock Tournaments. All rights reserved.</p>
+    <footer class="text-center p-8 text-orange-900/60 font-medium">
+        <p>&copy; 2026 Shot Clock Tournaments. All rights reserved.</p>
     </footer>
 
-    <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
     </script>
